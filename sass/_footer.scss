@@ -1,0 +1,52 @@
+.footer {
+    .contact {
+        &-info  {
+            color: #fff;
+        }
+        &-email{
+            @include font-size($small)
+        }
+    }
+    &-logo {
+        margin-bottom: 20px;
+    }
+    &-top {
+        border-top: 5px solid #e5e5e5;
+    }
+    &-middle {
+        background: #1b1b1b;
+        padding: 55px 0;
+    }
+    &-bottom {
+        background: #121212;
+        color: #fff;
+        padding: 20px 0;
+    }
+}
+.social-networks {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    .fab {
+        color: #fff;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        margin: 0 5px;
+        @include font-size(22px);
+        @include line-height(22px, 35px);
+    }
+}
+.payment-methods {
+    margin-bottom: 15px;
+    img {
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+}
+.madeBy {
+    text-align: right;
+    padding-top: 20px;
+}

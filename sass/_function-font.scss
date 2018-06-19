@@ -1,0 +1,29 @@
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    //Default font size on html element is 100%, equivalent to 16px;
+    @return #{$remSize}rem;
+}
+@function lineHeight($font-size, $line-height) {
+    @return $line-height / $font-size;
+}
+
+@function font($size:"", $height:"", $family:""){
+    @if $size == "" {
+        $size: calculateRem($size-base);
+    }@else {
+        $size: calculateRem($size);
+    }
+    @if $height == "" {
+        $height: $line-height;
+    }@else {
+        $height: $height;
+    }
+    @if $family == "" {
+        $family: $family-primary;
+    }@else {
+        $family: $family;
+    }
+    
+    @return join(($size / $height $family), ());
+}

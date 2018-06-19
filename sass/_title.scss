@@ -1,0 +1,18 @@
+.title {
+    &-page {
+        @include font-primary(18px);
+        text-transform: uppercase;
+        color: #000;
+        margin: 20px 0;
+        span {
+            color: $red;
+        }
+    }
+    &-footer {
+        font-family: $family-tertiary;
+        @include font-secondary(15px);
+        font-weight: 700;
+        color: #f05a66;
+        margin-bottom: 15px;
+    }
+}

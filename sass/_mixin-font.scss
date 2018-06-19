@@ -1,0 +1,23 @@
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+@mixin line-height($fontSize, $heightValue: 12){
+    line-height: $heightValue;
+    line-height: lineHeight($fontSize, $heightValue);
+}
+
+@mixin font-base($size: $size-base, $height:"", $family:"", $color: $color-read) {
+    font: font($size, $height, $family);
+    color: $color;
+}
+
+@mixin font-primary($size:"", $height: "", $color: $color-read) {
+    font: font($size, $height, $family-primary);
+    color: $color;
+}
+
+@mixin font-secondary($size:"", $height: "", $color: $color-read) {
+    font: font($size, $height, $family-secondary);
+    color: $color;
+}

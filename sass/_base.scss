@@ -1,0 +1,33 @@
+// vendor prefix
+@mixin prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+       -moz-#{$name}: #{$argument};
+        -ms-#{$name}: #{$argument};
+         -o-#{$name}: #{$argument};
+            #{$name}: #{$argument};
+}
+
+// default transition
+.transition{
+    @include prefix('transition', '150ms all ease 0s');
+}
+
+// queries
+$sm: 767px;
+$md: 992px;
+
+// rem ajust
+html,
+body{
+    @include font-base();
+    background-color: $background-color;
+}
+a { color: #666; }
+.img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+}
+.content-color {
+    background: #f2f2f2;
+}

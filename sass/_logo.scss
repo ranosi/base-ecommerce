@@ -1,0 +1,23 @@
+.site-logo {
+    height: 120px;
+    display: block;
+    font-size: 0;
+    text-align: center;
+    padding-top: 10px;
+    
+    &:before{
+        content: '';
+        display: inline-block;
+        height: 120px;
+        margin-right: -1%;
+        vertical-align: middle;
+        width: 1%;
+    }
+    
+    img{
+        display: inline-block;
+        max-height: 120px;
+        max-width: 99%;
+        vertical-align: middle;
+    }
+}

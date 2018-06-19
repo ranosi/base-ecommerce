@@ -1,0 +1,45 @@
+.is{
+    &-horizontal {
+        justify-content: flex-start;
+        .nav {
+            &_item {
+                font-weight: 700;
+                &:not(:first-child) {
+                    &:before {
+                        color: $brand;
+                        display: inline-block;
+                        margin: 0 10px;
+                        content: "/";
+                    }
+                }
+            }
+            &_link {
+                color: $brand;
+            }
+        }
+    }
+    &-vertical {
+        display: block;
+        .nav {
+            &_item {
+                margin-bottom: 5px;
+                font-family: $family-tertiary;
+            }
+            &_link {
+                color: #fff;
+            }
+        }
+    }
+    &-primary {
+        justify-content: space-between;
+        margin-top: 5%;
+        @include font-secondary;
+        .nav {
+            &_item {
+                text-transform: uppercase;
+            }
+            &_link { color: $brand; }
+        }
+        .is-selected { font-weight: 700; }
+    }
+}

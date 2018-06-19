@@ -1,0 +1,20 @@
+$black:         #000;
+$gray:          lighten($black, 50%);
+$gray-light:    lighten($black, 70%);
+$gray-lighter:  lighten($black, 90%);
+$gray-dark:     lighten($black, 30%);
+$gray-darker:   lighten($black, 15%);
+
+$base:  $black;
+$brand: #666;
+$brand-primary: #58C4CB;
+$brand-secondary: #4E9EA4;
+$info: $brand;
+$warning: #E1B866;
+$success: #73C8A9;
+$danger: #FF003C;
+
+$background-color: #fff;
+$color-read: $black;
+
+$red: #FF003C

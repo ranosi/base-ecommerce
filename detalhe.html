@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-commerce Modelo</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/theme.min.css">
+</head>
+<body>
+    <div class="site">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <ul class="nav is-horizontal">
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para página Sobra">Sobre</a></a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para página Minha Conta">Minha Conta</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para página Dúvidas">Dúvidas</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para página Contato">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-6 box-welcome">
+                                    <span>Seja bem-vindo, </span> Rafael Nogueira Silva
+                                </div>
+                                <div class="col-lg-3 box-login">
+                                    <a href="" title="Fazer seu login">Login</a> ou <a href="" title="Fazer seu cadastro">Cadastro</a>.
+                                </div>
+                                <div class="=col-lg-3 box-wishlist">
+                                    <a href="" title="Ir para Lista de Desejos">Lista de desejos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row header-middle">
+                    <div class="div col-lg-3 col-md-12">
+                        <h1 class="logo"><a href="index.html" title="Ir para página principal"><img src="./img//logo.png" alt="Wordbless"></a></h1>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <ul class="nav is-primary">
+                            <li class="nav_item is-selected"><a href="" class="nav_link" title="Ir para página ">Roupas</a></li>
+                            <li class="nav_item"><a href="" class="nav_link" title="Ir para página ">Acessórios</a></li>
+                            <li class="nav_item"><a href="" class="nav_link" title="Ir para página ">Camisas</a></li>
+                            <li class="nav_item"><a href="" class="nav_link" title="Ir para página ">Calças</a></li>
+                            <li class="nav_item"><a href="" class="nav_link" title="Ir para página ">Sapatos</a></li>
+                            <li class="nav_item"><a href="" class="nav_link" title="Ir para página ">Cintos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="cart">
+                            <a href="" title="" class="cart_link">
+                                <span class="cart_qtd">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <a href="" class="breadcrumb_item">Home</a><a href="" class="breadcrumb_item">Roupas</a><span class="breadcrumb_item active">Camisas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="product_image">
+                            <img src="https://placeimg.com/900/900/people" alt="">
+                        </div>
+                        <ul class="product_slider-image">
+                            <li class="product_slider-image_item"><a href=""><img src="https://placeimg.com/900/900/people" alt="" class="img"></a></li>
+                            <li class="product_slider-image_item"><a href=""><img src="https://placeimg.com/900/900/people" alt="" class="img"></a></li>
+                            <li class="product_slider-image_item"><a href=""><img src="https://placeimg.com/900/900/people" alt="" class="img"></a></li>
+                            <li class="product_slider-image_item"><a href=""><img src="https://placeimg.com/900/900/people" alt="" class="img"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h1 class="product_title">Nome do produto principal em 2 linhas completo</h1>
+                        <span class="product_reference-code">Cod. 00001</span>
+                        <div class="product_rate"></div>
+                        <div class="product_price-box">
+                            <span>de:</span><span class="price-old">R$ 140,00</span>
+                            <span class="price-promotion">por: R$ 120,00 à vista</span>
+                            <span class="price-installment">3x R$ 40,00 sem juros</span>
+                        </div>
+                        <div class="product_variants">
+                            <span class="title">Selecione o tamanho:</span>
+                            <div class="variants">
+                                <div class="variant"><a href="#" class="variant_option">P</a></div>
+                                <div class="variant"><a href="#" class="variant_option">M</a></div>
+                                <div class="variant"><a href="#" class="variant_option">G</a></div>
+                            </div>
+                        </div>
+                        <div class="product_quantity">
+                            <span class="title">Quantidade</span>
+                            <div class="quantity"><input type="number" id="quantity" name="quantity" value="01"></div>
+                            <div class="quantity_up"><button class="btn" id="btQuantityUp" name="quantity-up"></button></div>
+                            <div class="quantity_down"><button class="btn" id="btQuantityDown" name="quantity-down"></button></div>
+                        </div>
+                        <div class="product_add">
+                            <button class="btn" name="add-to-cart" id="btAddToCart">Adicionar ao carrinho</button>
+                        </div>
+                        <div class="product_delivery-calculation">
+                            <span class="title">Calcule o frete</span>
+                            <div class="form-inline">
+                                <div class="form-group"><input type="number" class="form-control" id="cep1" name="cep1" placeholder="000000"></div>
+                                <div class="form-group"><input type="number" class="form-control" id="cep2" name="cep2" placeholder="000"></div>
+                                <div class="form-group"><button class="btn" id="btCalculateDelivery" name="bt-calculate-delivery">Calcular</button></div>
+                            </div>
+                        </div>
+                        <div class="social-share">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="products-related">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="title title-page">Produtos relacionados</h2>
+                        <ul class="products">
+                            <li class="product col-lg-3 col-md-4 col-sm-6">
+                                <a href="detalhe.html" title="Nome do produto em 2 linhas com informação completa"><img class="img" src="https://placeimg.com/270/360/people" alt="Nome do produto em 2 linhas com informação completa"></a>
+                                <p class="product-title"><a href="detalhe.html" title="Nome do produto em 2 linhas com informação completa">Nome do produto em 2 linhas com informação completa</a></p>
+                                <p>
+                                    <span class="price">R$ 120,00</span>
+                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                </p>
+                            </li>
+                            <li class="product col-lg-3 col-md-4 col-sm-6">
+                                <a href="detalhe.html" title="Nome do produto em 3 linhas com informação completa e um pouco mais extensa"><img class="img" src="https://placeimg.com/270/360/people" alt="Nome do produto em 3 linhas com informação completa e um pouco mais extensa"></a>
+                                <p class="product-title"><a href="detalhe.html" title="Nome do produto em 3 linhas com informação completa e um pouco mais extensa do que as outras">Nome do produto em 3 linhas com informação completa e um pouco mais extensa do que as outras</a></p>
+                                <p>
+                                    <span class="price-old">R$ 140,00</span>
+                                    <span class="price-promotion">R$ 120,00</span>
+                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                </p>
+                            </li>
+                            <li class="product col-lg-3 col-md-4 col-sm-6">
+                                <a href="detalhe.html" title="Nome do produto em 3 linhas com informação completa e um pouco mais extensa"><img class="img" src="https://placeimg.com/270/360/people" alt="Nome do produto em 3 linhas com informação completa e um pouco mais extensa"></a>
+                                <p class="product-title"><a href="detalhe.html" title="Nome do produto em 3 linhas com informação completa e um pouco mais extensa">Nome do produto em 3 linhas com informação completa e um pouco mais extensa</a></p>
+                                <p>
+                                    <span class="price-old">R$ 140,00</span>
+                                    <span class="price-promotion">R$ 120,00</span>
+                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                </p>
+                            </li>
+                            <li class="product col-lg-3 col-md-4 col-sm-6">
+                                <a href="detalhe.html" title="Nome do produto em 1 linha"><img class="img" src="https://placeimg.com/270/360/people" alt="Nome do produto em 1 linha"></a>
+                                <p class="product-title"><a href="detalhe.html" title="Nome do produto em 1 linha">Nome do produto em 1 linha</a></p>
+                                <p>
+                                    <span class="price-old">R$ 140,00</span>
+                                    <span class="price-promotion">R$ 120,00</span>
+                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product_information">
+            <div class="container">
+                <ul class="nav nav-tabs" id="tabProductInformation" role="tabList">
+                    <li class="nav-item"><a href="#descricaoCompleta" id="tabDescricaoCompleta" data-toggle="tab" class="nav-item active" role="tab">Descrição completa</a></li>
+                    <li class="nav-item"><a href="#tabelaMedida" id="tabTabelaMedida" data-toggle="tab" class="nav-item" role="tab">Tabelas de medidas</a></li>
+                    <li class="nav-item"><a href="#formaPagamento" id="tabFormaPagamento" data-toggle="tab" class="nav-item" role="tab">Formas de pagamento</a></li>
+                </ul>
+                <div class="tab-content" id="tabProductInformation-content">
+                    <div class="tab-pane fade show active" id="descricaoCompleta" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tabelaMedida" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="formaPagamento" role="tabpanel"></div>
+                </div>
+            </div>
+        </section>
+        <section class="info-shop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-shop_box">
+                            <div class="row">
+                                <div class="div col-lg-3">
+                                    <img src="./img/ico-desconto.png" alt="">
+                                </div>
+                                <div class="div col-lg-9">
+                                    <strong>Desconto</strong> <br>
+                                    10% de desconto no boleto
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-shop_box">
+                            <div class="row">
+                                <div class="div col-lg-3">
+                                    <img src="./img/ico-desconto.png" alt="">
+                                </div>
+                                <div class="div col-lg-9">
+                                    <strong>Desconto</strong> <br>
+                                    10% de desconto no boleto
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-shop_box">
+                            <div class="row">
+                                <div class="div col-lg-3">
+                                    <img src="./img/ico-desconto.png" alt="">
+                                </div>
+                                <div class="div col-lg-9">
+                                    <strong>Desconto</strong> <br>
+                                    10% de desconto no boleto
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-shop_box">
+                            <div class="row">
+                                <div class="div col-lg-3">
+                                    <img src="./img/ico-desconto.png" alt="">
+                                </div>
+                                <div class="div col-lg-9">
+                                    <strong>Desconto</strong> <br>
+                                    10% de desconto no boleto
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <section class="footer-top">
+                <div class="newsletter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-12">
+                                <span class="title">Cadastre-se e receba ofertas exclusivas</span>
+                            </div>
+                            <div class="col-lg-10 col-md-12">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="nome" placeholder="Nome:">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-12">
+                                            <div class="form-group">
+                                                <button name="cadastrar" class="btn btn-news">Assinar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-logo"><img src="./img/logo-footer.png" alt=""></div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <img src="./img/ico-contact.png" alt="">
+                                </div>
+                                <div class="col-lg-10 contact-info">
+                                    (47) 1234.5678 <br>
+                                    (47) 1234.5678 <br>
+                                    <span class="contact-email">sac@useworldbless.com.br</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <h2 class="title title-footer">Institucional</h2>
+                            <ul class="nav is-vertical">
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 1</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 2</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 3</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 4</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 5</a></li>
+                            </ul>
+                            <div class="social-networks">
+                                <span>Siga-nos</span>
+                                <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <h2 class="title title-footer">Ajuda</h2>
+                            <ul class="nav is-vertical">
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 1</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 2</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 3</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 4</a></li>
+                                <li class="nav_item"><a href="" class="nav_link" title="Ir para ">Menu 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h2 class="title title-footer">Meios de Pagamento</h2>
+                            <div class="payment-methods">
+                                <img src="./img/pgto-1.png" alt="">
+                                <img src="./img/pgto-2.png" alt="">
+                                <img src="./img/pgto-3.png" alt="">
+                                <img src="./img/pgto-4.png" alt="">
+                                <img src="./img/pgto-5.png" alt="">
+                                <img src="./img/pgto-6.png" alt="">
+                                <img src="./img/pgto-7.png" alt="">
+                                <img src="./img/pgto-8.png" alt="">
+                                <img src="./img/pgto-9.png" alt="">
+                                <img src="./img/pgto-10.png" alt="">
+                                <img src="./img/pgto-11.png" alt="">
+                                <img src="./img/pgto-12.png" alt="">
+                            </div>
+                            <h2 class="title title-footer">Segurança</h2>
+                            <img src="./img/ico-google.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-12">
+                            World Bless. Todos os direitos reservados. Proibida reprodução total ou parcial. <br>
+                            Preços e estoque sujeito a alterações sem aviso prévio / Razão Social: Império da Moda Eireli ME | CNPJ: 09.017.403/0001-18.<br>
+                            Endereço: Rua Sete de Maio, 1000 - Bairro: Itoupava Norte | Cidade: Blumenau / SC - CEP: 89052-050<br><br>
+    
+                            © 2018 World Bless | Todos os direitos reservados.
+                        </div>
+                        <div class="col-lg-3 col-md-12 madeBy">
+                            <a href="" title="Binden Multiagência"><img src="./img/binden-multiagencia.png" alt="Binden Multiagência"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

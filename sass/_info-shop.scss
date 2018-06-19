@@ -1,0 +1,10 @@
+.info-shop {
+    border-bottom: 1px solid #e5e5e5;
+    @include font-size(18px);
+    font-family: $family-tertiary;
+    padding: 25px 0;
+    &_box {
+        border: 1px solid #e5e5e5;
+        padding: 15px;
+    }
+}

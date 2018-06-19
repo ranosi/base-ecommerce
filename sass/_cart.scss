@@ -1,0 +1,26 @@
+.cart {
+    &_link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 10% auto 0;
+        display: block;
+        text-align: center;
+        position: relative;
+        background: url('../img/ico-cart.png') no-repeat center center #d7d7d7;
+    }
+    &_qtd {
+        background: $red;
+        color: $gray-lighter;
+        background: #FF003C;
+        text-align: center;
+        border-radius: 50%;
+        min-width: 20px;
+        line-height: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: -12px;
+    }
+}

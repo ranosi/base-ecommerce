@@ -1,0 +1,32 @@
+.products {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product {
+    margin: 15px 0;
+    &-title {
+        @include font-primary(14px);
+        font-weight: 700;
+        margin: 15px 0;
+        a {
+            color: $brand;
+        }
+    }
+}
+.price {
+    @include font-primary(14px);
+    color: $brand;
+    &-old {
+        text-decoration: line-through;
+    }
+    &-promotion {
+        color: $red;
+        font-weight: 700;
+    }
+}
+.installment {
+    display: block;
+}

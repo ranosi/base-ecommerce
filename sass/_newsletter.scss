@@ -1,0 +1,35 @@
+.newsletter {
+    border-top: 1px solid #d1d1d1;
+    padding: 35px 0 30px;
+    background: #e5e5e5;
+    color: #000;
+    .title {
+        font-weight: 700;
+        font-family: $family-tertiary;
+        @include font-size(18px);
+        text-transform: uppercase;
+        padding-top: 5px;
+        display: inline-block;
+    }
+    .form-control {
+        background: #e5e5e5;
+        padding: 15px 10px;
+        border: 2px solid #fff;
+        text-transform: uppercase;
+        &::placeholder {
+            font-weight: 700;
+            font-style: italic;
+        }
+        &::-moz-placeholder {
+            opacity: 1;
+        }
+    }
+    .btn-news {
+        background: #fff;
+        color: #f05a66;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 15px;
+        font-weight: 700;
+    }
+}

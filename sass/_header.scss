@@ -1,0 +1,27 @@
+.header {
+    background-color: #fff;
+    &-top {
+        border-bottom: 1px solid #f2f2f2;
+        padding: 15px 0;
+        font-weight: 700;
+    }
+    &-middle {
+        padding: 15px 0;
+    }
+}
+.box {
+    &-welcome {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &-login {
+        color: $brand;
+        padding-left: 15px;
+        background: url(../img/ico-conta.png) no-repeat 0 0;
+    }
+    &-wishlist {
+        padding-left: 20px;
+        background: url(../img/ico-coracao.png) no-repeat 0 0;
+    }
+}
