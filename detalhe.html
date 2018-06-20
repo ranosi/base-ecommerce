@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-commerce Modelo</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/theme.min.css">
 </head>
 <body>
@@ -66,18 +66,20 @@
             </div>
         </header>
         <section class="content">
-            <div class="breadcrumb">
+            <nav class="breadcrumb-container">
                 <div class="container">
-                    <div class="row">
-                        <a href="" class="breadcrumb_item">Home</a><a href="" class="breadcrumb_item">Roupas</a><span class="breadcrumb_item active">Camisas</span>
-                    </div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="">Home</a></li>
+                        <li class="breadcrumb-item"><a href="">Roupas</a></li>
+                        <li class="breadcrumb-item active">Camisas</li>
+                    </ol>
                 </div>
-            </div>
+            </nav>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-7 col-md-12">
                         <div class="product_image">
-                            <img src="https://placeimg.com/900/900/people" alt="">
+                            <img class="img" src="https://placeimg.com/900/900/people" alt="">
                         </div>
                         <ul class="product_slider-image">
                             <li class="product_slider-image_item"><a href=""><img src="https://placeimg.com/900/900/people" alt="" class="img"></a></li>
@@ -86,41 +88,43 @@
                             <li class="product_slider-image_item"><a href=""><img src="https://placeimg.com/900/900/people" alt="" class="img"></a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-5 col-md-12">
                         <h1 class="product_title">Nome do produto principal em 2 linhas completo</h1>
                         <span class="product_reference-code">Cod. 00001</span>
-                        <div class="product_rate"></div>
-                        <div class="product_price-box">
+                        <div class="product_rate mt-4 mb-4"></div>
+                        <div class="product_price-box mt-4 mb-4">
                             <span>de:</span><span class="price-old">R$ 140,00</span>
                             <span class="price-promotion">por: R$ 120,00 à vista</span>
                             <span class="price-installment">3x R$ 40,00 sem juros</span>
                         </div>
-                        <div class="product_variants">
+                        <div class="product_variants mt-4 mb-4">
                             <span class="title">Selecione o tamanho:</span>
                             <div class="variants">
-                                <div class="variant"><a href="#" class="variant_option">P</a></div>
+                                <div class="variant active"><a href="#" class="variant_option">P</a></div>
                                 <div class="variant"><a href="#" class="variant_option">M</a></div>
                                 <div class="variant"><a href="#" class="variant_option">G</a></div>
                             </div>
                         </div>
-                        <div class="product_quantity">
+                        <div class="product_quantity mt-4 mb-4">
                             <span class="title">Quantidade</span>
-                            <div class="quantity"><input type="number" id="quantity" name="quantity" value="01"></div>
-                            <div class="quantity_up"><button class="btn" id="btQuantityUp" name="quantity-up"></button></div>
-                            <div class="quantity_down"><button class="btn" id="btQuantityDown" name="quantity-down"></button></div>
-                        </div>
-                        <div class="product_add">
-                            <button class="btn" name="add-to-cart" id="btAddToCart">Adicionar ao carrinho</button>
-                        </div>
-                        <div class="product_delivery-calculation">
-                            <span class="title">Calcule o frete</span>
-                            <div class="form-inline">
-                                <div class="form-group"><input type="number" class="form-control" id="cep1" name="cep1" placeholder="000000"></div>
-                                <div class="form-group"><input type="number" class="form-control" id="cep2" name="cep2" placeholder="000"></div>
-                                <div class="form-group"><button class="btn" id="btCalculateDelivery" name="bt-calculate-delivery">Calcular</button></div>
+                            <div class="quantity form-inline">
+                                <div class="form-group"><button class="btn quantity_down" id="btQuantityDown" name="quantity-down">-</button></div>
+                                <div class="form-group"><input type="number" class="form-control quantity_input" id="quantity" name="quantity" value="01"></div>
+                                <div class="form-group"><button class="btn quantity_up" id="btQuantityUp" name="quantity-up">+</button></div>
                             </div>
                         </div>
-                        <div class="social-share">
+                        <div class="product_add mt-4 mb-4">
+                            <button class="btn" name="add-to-cart" id="btAddToCart">Adicionar ao carrinho</button>
+                        </div>
+                        <div class="product_delivery-calculation mt-4 mb-4">
+                            <span class="title">Calcule o frete</span>
+                            <div class="cep form-inline">
+                                <div class="form-group"><input type="number" class="form-control cep_input cep-1" id="cep1" name="cep1" placeholder="000000"></div>
+                                <div class="form-group"><input type="number" class="form-control cep_input cep-2" id="cep2" name="cep2" placeholder="000"></div>
+                                <div class="form-group"><button class="btn btn-calc" id="btCalculateDelivery" name="bt-calculate-delivery">Calcular</button></div>
+                            </div>
+                        </div>
+                        <div class="social-share mt-4 mb-4">
 
                         </div>
                     </div>
@@ -138,7 +142,7 @@
                                 <p class="product-title"><a href="detalhe.html" title="Nome do produto em 2 linhas com informação completa">Nome do produto em 2 linhas com informação completa</a></p>
                                 <p>
                                     <span class="price">R$ 120,00</span>
-                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                    <span class="price-installment">3x de R$ 40,00 sem juros</span>
                                 </p>
                             </li>
                             <li class="product col-lg-3 col-md-4 col-sm-6">
@@ -147,7 +151,7 @@
                                 <p>
                                     <span class="price-old">R$ 140,00</span>
                                     <span class="price-promotion">R$ 120,00</span>
-                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                    <span class="price-installment">3x de R$ 40,00 sem juros</span>
                                 </p>
                             </li>
                             <li class="product col-lg-3 col-md-4 col-sm-6">
@@ -156,7 +160,7 @@
                                 <p>
                                     <span class="price-old">R$ 140,00</span>
                                     <span class="price-promotion">R$ 120,00</span>
-                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                    <span class="price-installment">3x de R$ 40,00 sem juros</span>
                                 </p>
                             </li>
                             <li class="product col-lg-3 col-md-4 col-sm-6">
@@ -165,7 +169,7 @@
                                 <p>
                                     <span class="price-old">R$ 140,00</span>
                                     <span class="price-promotion">R$ 120,00</span>
-                                    <span class="installment">3x de R$ 40,00 sem juros</span>
+                                    <span class="price-installment">3x de R$ 40,00 sem juros</span>
                                 </p>
                             </li>
                         </ul>

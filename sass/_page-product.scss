@@ -1,0 +1,143 @@
+.product {
+    &_title {
+        @include font-base(26px, "", $family-tertiary);
+        margin: 0;
+    }
+    &_reference-code {
+        @include font-size(12px);
+    }
+    &_price-box {
+        text-transform: uppercase;
+        color: $brand;
+        .price {
+            &-old {
+                @include font-size(15px);
+            }
+            &-promotion {
+                @include font-size(25px);
+                font-weight: 100;
+                color: #000;
+                display: block;
+            }
+            &-installment {
+                @include font-size(16px);
+            }
+        }
+    }
+    &_variants {
+        .title {
+            font-weight: 700;
+            @include font-size(14px);
+        }
+        .variants {
+            display: flex;
+            justify-content: flex-start;
+            .variant {
+                border: 2px solid transparent;
+                color: $brand;
+                margin: 10px 5px 10px 0;
+                font-weight: 700;
+                cursor: pointer;
+                transition-duration: 0.2s;
+                &_option {
+                    color: $brand;
+                    padding: 10px 15px;
+                    display: block;
+                    border: 1px solid $brand;
+                }
+                &:hover,
+                &.active {
+                    border: 2px solid $red;
+                    .variant_option {
+                        border-color: transparent;
+                        text-decoration: none;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+    &_quantity {
+        .title {
+            font-weight: 700;
+            @include font-size(14px);
+        }
+        .quantity {
+            margin-top: 10px;
+            &_input {
+                border: 1px solid $brand;
+                @include font-primary(18px);
+                text-align: center;
+                border-radius: 0;
+                width: 60px;
+                margin: 0 -1px;
+                padding: 5px 13px;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+            .btn {
+                @include font-size(18px);
+                border: 1px solid $brand;
+                border-radius: 0;
+                background: #fff;
+                line-height: normal;
+                padding: 7px 16px;
+                font-weight: 700;
+            }
+        }
+    }
+    &_add {
+        .btn {
+            @include font-primary(20px, "", #fff);
+            width: 70%;
+            background: $brand-primary;
+            text-transform: uppercase;
+            border-radius: 0;
+            transition: 0.3s;
+            padding: 10px 0;
+            border: 1px solid transparent;
+            &:hover {
+                background: #fff;
+                color: $brand-primary;
+                border-color: $brand-primary
+            }
+        }
+    }
+    &_delivery-calculation {
+        .title {
+            @include font-primary(20px, "", $brand);
+            text-transform: uppercase;
+        }
+        .cep {
+            margin-top: 10px;
+            &_input {
+                border-radius: 0;
+                border: 1px solid $brand;
+                padding: 5px 13px;
+                @include font-primary(18px);
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+            .cep-1 {
+                width: 82px;
+            }
+            .cep-2 {
+                width: 55px;
+                margin: 0 10px;
+            }
+            .btn-calc {
+                background: none;
+                @include font-primary(15px, "", #000);
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+    }
+}

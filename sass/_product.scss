@@ -17,8 +17,7 @@
     }
 }
 .price {
-    @include font-primary(14px);
-    color: $brand;
+    @include font-primary(14px, "", $brand);
     &-old {
         text-decoration: line-through;
     }
@@ -26,7 +25,8 @@
         color: $red;
         font-weight: 700;
     }
-}
-.installment {
-    display: block;
+    &-installment {
+        display: block;
+        font-style: italic;
+    }
 }
