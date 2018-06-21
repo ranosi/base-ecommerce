@@ -1,0 +1,24 @@
+.breadcrumb-container {
+    background-color: #e9ecef;
+    border-top: 1px solid #000;
+    .breadcrumb {
+        padding: 15px;
+        .breadcrumb-item {
+            font-weight: 700;
+            +.breadcrumb-item {
+                padding-left: .2rem;
+                &::before {
+                    content: "»";
+                    padding-right: .2rem;
+                    color: #000;
+                }
+            }
+            &.active {
+                color: $brand-primary
+            }
+            a {
+                color: #000;
+            }
+        }
+    }
+}

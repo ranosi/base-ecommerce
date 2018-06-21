@@ -1,57 +1,13 @@
-// vendor prefix
-@mixin prefix($name, $argument) {
-    -webkit-#{$name}: #{$argument};
-       -moz-#{$name}: #{$argument};
-        -ms-#{$name}: #{$argument};
-         -o-#{$name}: #{$argument};
-            #{$name}: #{$argument};
-}
-
-// default transition
-.transition{
-    @include prefix('transition', '150ms all ease 0s');
-}
-
-// queries
-$sm: 767px;
-$md: 992px;
-
-// rem ajust
 html,
 body{
     @include font-base();
     background-color: $background-color;
 }
 a { color: #666; }
-.img {
-    display: block;
-    width: 100%;
-    min-width: 100%;
+.page {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .content-color {
     background: #f2f2f2;
-}
-.breadcrumb-container {
-    background-color: #e9ecef;
-    border-top: 1px solid #000;
-    .breadcrumb {
-        padding: 15px;
-        .breadcrumb-item {
-            font-weight: 700;
-            +.breadcrumb-item {
-                padding-left: .2rem;
-                &::before {
-                    content: "»";
-                    padding-right: .2rem;
-                    color: #000;
-                }
-            }
-            &.active {
-                color: $brand-primary
-            }
-            a {
-                color: #000;
-            }
-        }
-    }
 }

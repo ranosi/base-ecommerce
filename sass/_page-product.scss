@@ -139,5 +139,19 @@
                 text-decoration: underline;
             }
         }
+        .delivery_estimate {
+            .list-group-item {
+                &:first-child,
+                &:last-child {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    &_image {
+        border: 1px solid $gray-light;
+    }
+    &_information {
+        position: relative;
     }
 }
